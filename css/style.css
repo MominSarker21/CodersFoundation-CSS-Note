@@ -1,0 +1,914 @@
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Google Fonts syle.css link */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Google Fonts Download Way*/
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+@font-face{
+    src: url(../fonts/EduSABeginner-Medium.ttf);
+    font-family:eduSABginnerMedium;
+}
+@font-face{
+    src: url(../fonts/EduSABeginner-SemiBold.ttf);
+    font-family:eduSABginnerSemiBold;
+}
+
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Reuseable Component */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+*{
+    margin:0;
+    padding:0;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(0, 216, 43);
+    color:#fff;
+    margin: 20px;
+}
+h3,h4,h5{
+    margin:20px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /*Background Image setup*/
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.body{ /* Please remove (.) dot sign then it's work*/
+    width:300px;
+    height:300px;
+    background-image:url('../img/flower.png');
+    background-repeat:no-repeat; /*repeat-x, repeat-y, repeat, no-repeat*/
+    background-position:right top;
+    background-size: 200px ; /*cover, contain, 100% 100%, 100px 100px*/
+    margin-bottom:20px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /*Background property*/
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.box{
+    margin:0 20px 0 20px;
+}
+.box1{
+    height:350px;
+    background-color:rgb(255, 187, 0);
+}
+.box2{
+    height:350px;
+    background-color:green;
+    background-image:url("../img/flower.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed; /* fixed, scroll */
+    background-position:center;
+}
+.box3{
+    height:350px;
+    background-color:blue;
+    background:blue url("../img/flower1.png") no-repeat center / 100% scroll; /*Background All Property Set in one line*/
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Border */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.border{
+    width:200px;
+    height:200px;
+    background-color: red;
+    border-width:5px 10px 20px 40px;
+    border-style:solid dotted groove dashed; /* solid, dotted, dashed, ridge, inset, outset, groove, hidden */
+    border-color:blue yellow lime orange; /* Diffrent side diffrent color */
+    margin: 0 auto;
+    padding:20px; /* padding, padding-left, padding-right, padding-top, padding-bottom*/
+}
+.border1 p{
+    margin:20px; /* margin, margin-top, margin-bottom, margin-right, margin-left*/
+    border:2px solid red; /* border-right, border-left, border-top, border-bottom */
+    border-radius:2px 4px 8px 16px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Box Module */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.box_model{
+    width:300px;
+    text-align:center;
+    background:rgb(228, 228, 227);
+    border: 5px solid red;
+    padding: 50px;
+    margin:20px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Outline */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.outline{
+    width:300px;
+    background:#e1d6d6;
+    text-align: center;
+    border:5px solid red;
+    outline-width:5px;
+    outline-style: dotted; /* solid, dotted, dashed, ridge, inset, outset, groove, hidden */
+    outline-offset:10px;
+    margin:40px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Text Align */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.text_align{
+    margin:20px;
+}
+.text_align .text_align_left{
+    text-align: left;
+}
+.text_align .text_align_center{
+    text-align: center;
+}
+.text_align .text_align_right{
+    text-align: right;
+    margin-bottom:10px;
+}
+.text_align .text_align_justify{
+    text-align: justify;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Text Decoration */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.text_decoration{
+    margin:20px;
+    font-size:30px;
+}
+.text_decoration .underline{
+    text-decoration: underline;
+}
+.text_decoration .overline{
+    text-align: right;
+    text-decoration: overline;
+}
+.text_decoration .line_through{
+    text-align: center;
+    text-decoration: line-through;
+}
+.text_decoration u{
+    text-decoration: none;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Text Transform */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.text_transform{
+    margin:20px;
+    font-size:30px;
+}
+.text_transform .capitalize{
+    text-transform: capitalize;
+}
+.text_transform .uppercase{
+    text-align: right;
+    text-transform: uppercase;
+}
+.text_transform .lowercase{
+    text-align: center;
+    text-transform: lowercase;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Text Indent */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.text_indent{ 
+    margin:20px;
+    text-indent:50px; /* 50 px space takes before the first line starts */
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Letter Spacing */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.letter_spacing{
+    margin:20px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px; /* also we can use (-) negative value */
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Word Spacing */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.word_spacing{
+    margin:20px;
+    font-size: 30px;
+    text-align: center;
+    word-spacing: 25px; /* also we can use (-) negative value */
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Text Shadow */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.text_shadow{
+    margin:20px;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 5px 2px 2px rgb(235, 59, 10); /* 1st value left right & 2nd value top bottom & 3rd value is opacity, also we can use (-) negative value */
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Direction */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.direction p{
+    margin:20px;
+    font-size: 50px;
+    text-align: center;
+    direction:rtl;
+    unicode-bidi:bidi-override;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Display */
+            /*
+            (1) Block Element:- Take full space
+                h1-h6, p are block Level Element
+            (2) Inline Elemant:- Take As much space as he needs 
+                a Tag is inline Element
+            */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.display{
+    margin:20px;
+}
+.display h3{
+    text-align: center;
+    display: inline /* convert block elemnt to inline element also we can use (display: none;) & visibility: none; */;
+    /* display:none;  hide content with space but visibility:none; only hide content, not area*/
+}
+.display a{
+    font-size:20px;
+    text-align: center;
+    display:block; /* convert inline element to block element also we can use (display: none;) & visibility: none; */
+    /* display:none;  hide content with space but visibility:none; only hide content, not area*/
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Display Inline-Block */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.inline_block{
+    margin:20px;
+    text-align: center;
+}
+.inline_block .inline_block1{
+    width:200px;
+    height:200px;
+    background:red;
+    display:inline-block; /* display:none;  hide content with space but visibility:none; only hide content, not area*/
+}
+.inline_block .inline_block2{
+    width:200px;
+    height:200px;
+    background:green;
+    display:inline-block; /* display:none;  hide content with space but visibility:none; only hide content, not area*/
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Google Fonts */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.google_fonts h3{ /* Standard way to add google fonts link add in head tag */
+    text-align: center;
+    font-size:30px;
+    font-family: 'Montserrat', sans-serif; /* google fonts link set up in head tag */
+}
+.google_fonts h4{ /* @imort way to add google fonts link add in style.css */
+    text-align: center;
+    font-size:30px;
+    font-family: 'Rubik Moonrocks', cursive; /* google fonts link set up in style.css */
+}
+.google_fonts h5{ /* Download way to add google fonts */
+    text-align: center;
+    font-size:30px;
+    font-family:eduSABginnerSemiBold;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Font Awesome */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.font_awesome_icon i{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin:20px;
+    color:red;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Box position */
+/* static, absolute, fixed, relative, sticky, initial, inherit*/
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.container{
+    
+    height:100vh;
+    margin:20px;
+    position:relative;
+}
+.container .magenta_box{ /* Left Top Box */
+    width:200px;
+    height:200px;
+    background:magenta;
+    top:0; 
+    left:0;
+    margin:auto;
+    position:absolute;
+}
+.container .red_box{ /* Center Top Box */
+    width:200px;
+    height:200px;
+    background:red;
+    top:0; 
+    right:0;
+    left:0;
+    margin:auto;
+    position:absolute;
+}
+.container .Yellow_box{ /* Right Top Box */
+    width:200px;
+    height:200px;
+    background:yellow;
+    top:0; 
+    right:0;
+    margin:auto;
+    position:absolute;
+}
+.container .green_box{  /* Middle Right Box */
+    width:200px;
+    height:200px;
+    background:green;
+    top:0; 
+    right:0;
+    bottom:0;
+    margin:auto;
+    position:absolute;
+}
+.container .violet_box{  /* Bottom Right Box */
+    width:200px;
+    height:200px;
+    background:violet;
+    right:0;
+    bottom:0;
+    margin:auto;
+    position:absolute;
+}
+.container .blue_box{ /* Center Bottom Box */
+    width:200px;
+    height:200px;
+    background:blue;
+    left:0; 
+    right:0;
+    bottom:0;
+    margin:auto;
+    position:absolute;
+}
+.container .seagreen_box{ /* Left Bottom Box */
+    width:200px;
+    height:200px;
+    background:seagreen;
+    left:0; 
+    bottom:0;
+    margin:auto;
+    position:absolute;
+}
+.container .orange_box{ /* Middle Left Box */
+    width:200px;
+    height:200px;
+    background:orange;
+    top:0; 
+    bottom:0;
+    left:0;
+    margin:auto;
+    position:absolute;
+}
+.container .skyblue_box{ /* Center Box */
+    width:200px;
+    height:200px;
+    background:skyblue;
+    top:0; 
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    position:absolute;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Position Sticky Menu */
+/* static, absolute, fixed, relative, sticky, initial, inherit*/
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.sticky_container .sticky_menu{
+    background-color: red;
+    border:2px groove lime;
+    padding: 15px;
+    margin-bottom:10px;
+    position:sticky; /* static, absolute, fixed, relative, sticky, initial, inherit*/
+    top:0;
+    margin:20px;
+}
+.sticky_container p{
+    text-align:justify;
+    margin:20px;
+}
+.sticky_container .padding{
+    padding:0 0 250px 0;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Z-Index */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.z_index_container{
+    position:relative;
+    width:100%;
+    height:200px;
+}
+.z_index_container img{
+    width:200px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    margin:20px;
+}
+.z_index_container p{
+    margin:20px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Overflow */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.overflow{
+    width:300px;
+    height:250px;
+    background:rosybrown;
+    margin: auto;
+    padding:5px;
+    overflow:scroll; /* visible, scroll, hidden */
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Float 1*/
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.float_container1, .float_container2{
+    margin:20px;
+}
+.float_container p img{
+    float:right; /* left, right, none */
+    width:200px;
+    height:200px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Float 2*/
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.lorem1{
+    width:200px;
+    height:200px;
+    border:2px solid red;
+    float:left;
+}
+.lorem2{
+    border: 2px solid green;
+    background: yellow;
+    clear:both;
+    padding:5px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Box Sizing-1 */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.box_sizing1{
+    margin:20px;
+    width:400px;
+    height:200px;
+    background:cornflowerblue;
+    margin:auto;
+    padding:5px;
+}
+.box_sizing1 input{
+    margin-top: 60px;
+    width:100%;
+    border:1px solid #000;
+    box-sizing: border-box;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Box Sizing-2 */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.box_sizing2{
+    margin:20px;
+    height:100px;
+}
+.box_sizing_extra_class{
+    padding:40px;
+    float:left;
+    box-sizing: border-box;
+}
+.box_sizing_box1{
+    width:33.3%;
+    background:red;
+}
+.box_sizing_box2{
+    width:33.3%;
+    background:blue;
+}
+.box_sizing_box3{
+    width:33.3%;
+    background:green;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Pseudo Class -1 */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.pseudo{
+    margin:20px;
+    text-align: center;
+}
+.pesudo a:link{
+    text-decoration: none;
+    color:red;
+}
+.pseudo a:visited{
+    color:green;
+}
+.pseudo a:hover{
+    color:rgb(4, 0, 255);
+}
+.pseudo a:active{
+    color:rgb(4, 255, 0);
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Pseudo Class -2 */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.nth_child{
+    margin:20px;
+    text-align: center;
+}
+.nth_child p:first-child{
+    color:red;
+}
+.nth_child p:nth-child(2){
+    color:green;
+}
+.nth_child p:last-child{
+    color:blue;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Pseudo Element */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.pseudo_element{
+    margin:20px;
+    text-align: center;
+}
+.pseudo_element h4::before{
+    content:' New Text Added By Before Element--> ';
+}
+.pseudo_element h4::after{
+    content:' <--New Text Added By After Element ';
+}
+.pseudo_element h5::after{
+    content:'';
+    width:40px;
+    height:5px;
+    background:red;
+    display: block;
+    margin:auto;
+    margin-top: 10px;
+}
+.pseudo_element p::first-letter{
+    color:red;
+    font-size:30px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Opacity */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.opacity{
+    width:200px;
+    height:200px;
+    background:red;
+    margin:auto;
+    opacity:0.5;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Box Shadow */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.box_shadow{
+    width:200px;
+    height:200px;
+    background:blue;
+    margin:auto;
+    box-shadow: 5px 5px 10px red;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Media Queries */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.media_querie_box{
+    width:200px;
+    height:200px;
+    background:purple;
+    margin: auto;
+}
+/* =====x===== Max Width =====x===== */
+/*
+@media  screen and (max-width: 480px) {
+    .media_querie_box{
+        background:blue;
+    }
+}
+*/
+
+/* =====x===== Min Width =====x===== */
+/*
+@media  screen and (min-width: 480px) {
+    .media_querie_box{
+        background:blue;
+    }
+}
+*/
+
+/* =====x===== Min Width + Max Width =====x===== */
+
+@media  screen and (min-width: 480px) and (max-width:768px) {
+    .media_querie_box{
+        background:hotpink;
+    }
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Gradient */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.gradient_container{
+    margin:20px;
+}
+.gradient_box{
+    padding:40px;
+    float:left;
+    box-sizing: border-box;
+    margin-right:4%;
+}
+.gradient_box1{
+    width:22%;
+    height:200px;
+    background:linear-gradient(orange,orangered,red,lime);
+    border:2px dashed red;
+    text-align: center;
+    font-size: 20px;
+}
+.gradient_box2{
+    width:22%;
+    height:200px;
+    background:linear-gradient(#0fbcf9 50%,#1e272e 50%);
+    border:2px dashed red;
+    text-align: center;
+    font-size: 20px;
+}
+.gradient_box3{
+    width:22%;
+    height:200px;
+    background:linear-gradient(to right,#7efff5 50%,#ffb8b8 50%); /* also we can use, to right, to top, to bottom */
+    border:2px dashed red;
+    text-align: center;
+    font-size: 20px;
+}
+.gradient_box4{
+    width:22%;
+    height:200px;
+    background:radial-gradient(#26de81,orangered,#26de81); /* also we can use all the linear value in radial values*/
+    border:2px dashed red;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 0;
+}
+/* =====x===== Reapeting Linear Gradient =====x===== */
+.repeating_linear{
+    margin:20px;
+}
+.repeating_linear_gradient{
+    width:100%;
+    height:200px;
+    background:repeating-linear-gradient(red 5%,yellow 10%,green 25%);
+    border:2px dashed red;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 240px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Transform */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.transform{
+    width:100%;
+    height:300px;
+}
+.transform_extra_class{
+    float:left;
+}
+.transform_box1{
+    margin:20px;
+    width:150px;
+    height:150px;
+    background:red;
+    transform:translate(50px, 40px); /* 1st 50px value Left, 2nd 40px value top, */
+    transition:1s;
+}
+.transform_box1:hover{
+    transform:scale(0.5); /* 1 mean 100px and 0.5 mean 50px*/
+}
+.transform_box2{
+    margin-top: 100px;
+    margin-left:100px;
+    width:150px;
+    height:150px;
+    background:yellow;
+    transform:rotate(45deg); /* rotate, skew, matrix */ 
+    transition:1s;
+}
+.transform_box2:hover{
+    transform:rotate(360deg) scale(1.5) skew(20deg); /* rotate, skew, matrix */
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Transition */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.transition_box{
+    width:100%;
+    height:400px;
+    margin:auto;
+}
+.transition_box{
+    width:300px;
+    height:300px;
+    background:url(../img/flower.png) no-repeat center / cover;
+    transition:width 2s, height 2s, transform 2s;
+    transition-delay: 1s;
+}
+.transition_box:hover{
+    width:350px;
+    height:350px;
+    transform:rotate(360deg);
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Animation-1 */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.animation_box1{
+    width:200px;
+    height:200px;
+    background:red;
+    animation-name: momin;
+    animation-duration: 3s;
+    margin:auto;
+}
+@keyframes momin {
+    from {background-color: red;}
+    to {background-color: greenyellow;}
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Animation-2 */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.animation_box2{
+    width:200px;
+    height:200px;
+    background:red;
+    animation-name: sarker;
+    animation-duration: 5s;
+    margin:auto;
+}
+@keyframes sarker {
+    0% {background-color: red;}
+    25% {background-color: rgb(0, 0, 250);}
+    50% {background-color: rgb(246, 0, 193);}
+    75% {background-color: greenyellow;}
+    100% {background-color: rgb(0, 150, 244);}
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Animation-3 */
+/* animation: name duration atf delay aic direction*/
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.animation_box3_container{
+    height:50vh;
+}
+.animation_box3{
+    width:200px;
+    height:200px;
+    background:red;
+    position: relative;
+    animation-name: momin_sarker;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 3; /* 3, infinite, reverse, alternate */
+    animation-timing-function: ease; /* ease, ease-in, ease-in-out, ease-out */
+    margin:auto;
+}
+
+@keyframes momin_sarker{
+    0%{background-color: #26de81; left:0px; top:0px;}
+    25%{background-color: #008bfd; left:250px; top:0px;}
+    50%{background-color: #6200ff; left:250px; top:250px;}
+    75%{background-color: #ff0073; left:0px; top:250px;}
+    100%{background-color: #ffa600; left:0px; top:0px;}
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* CSS Sprite Image/Icon */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.css_sprite{
+    margin:20px;
+}
+.css_sprite ul{
+    margin:0;
+    padding:0;
+    display: inline;
+}
+.css_sprite ul li{
+    list-style: none;
+    display: inline-block;
+}
+.css_sprite ul li a{
+    text-decoration: none;
+    width:84px;
+    height:84px;
+    background: url('../img/sosmed-sprite1.png') no-repeat;
+    border:1px solid #ccc;
+    display: block;
+    transition:1s;
+}
+.css_sprite ul:nth-child(1):hover li a {
+    background-position: 0 -84px;
+}
+.css_sprite ul:nth-child(2) li a {
+    background-position: -84px 0;
+}
+.css_sprite ul:nth-child(2):hover li a {
+    background-position: -84px -84px;
+}
+.css_sprite ul:nth-child(3) li a {
+    background-position: -168px 0;
+}
+.css_sprite ul:nth-child(3):hover li a {
+    background-position: -168px -84px;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Grid-1 */
+
+/* grid-template-columns:3,1fr;  grid-template-columns:300px 500px 400px 200px;  grid-template-columns:3% 40% 30%;  grid-template-columns:repeat(2, 1fr);  grid-template-columns:1fr 1fr 1fr;*/
+
+/* grid-auto-rows: 300px; <--> for increase row size */
+/* justify-items: stretch; <--> is defauld, also we can use start & end */
+/* grid-auto-rows: minmax(100px, auto) <--> for prevernt overflow of grid */
+/* align-items: stretch; <--> is default, also we can use end & start */ 
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.grid_container{
+    display:grid;
+    grid-template-columns:auto auto auto ; /* auto,1fr/2fr or more, 100px or more,33.3% or more, (3, 1fr) or more, And it can be a different size, how many columns do you need, you can use so many times*/ 
+    grid-column-gap: 10px;  /* grid-gap: 10px 20px */  /* 1st is row value & 2nd value column value*/
+    grid-row-gap: 10px;     /* grid-gap: 10px 20px */  /* 1st is row value & 2nd value column value*/
+    margin:20px;
+}
+.grid_container .grid_item{
+    background-color: #ccc;
+}
+
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+                    /* Grid-2 */
+             /* grid-column:1/3; */
+             /* grid-row:1/3; */
+/* =====x=====x=====x=====x=====x=====x=====x===== */
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows:100px;
+    margin:20px;
+}
+.wrapper_box1{
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+.wrapper_box2{
+    background-color: greenyellow;
+    grid-column: 1/3;
+}
+.wrapper_box3{
+    background-color: blue;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
